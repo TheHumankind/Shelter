@@ -1,0 +1,129 @@
+:root {
+    --color-primary: #F1CDB3;
+    --color-dark: #292929;
+    --color-white: #FFFFFF;
+    --georgia-font: Georgia, 'Times New Roman', Times, serif;
+    --arial-font: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    display: flex;
+    align-items: center;   
+    padding: 15px 45px; 
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: var(--georgia-font);
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: var(--color-dark);
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 40px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-name {
+    color: var(--color-primary);
+    font-family: var(--georgia-font);
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.logo-descr {
+    margin-top: 6px;
+    color: var(--color-white);
+    font-family: var(--arial-font);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav {
+    height: 60px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 443px;
+    height: 100%;
+    column-gap: 35px;
+    font-family: var(--arial-font);
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+    background-color: var(--color-primary);
+}
+
+
+.nav li {
+    margin-bottom: 3px;
+}
+
+.not {
+    width: 100%;
+    height: 908px;
+    padding: 343px 40px 0px;
+    background-image: url('./../assets/img/shelter-not.jpg');
+}
+
+.not-header {
+    width: 310px;
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 58px;
+    font-family: var(--georgia-font);
+    color: var(--color-white);
+}
+
+.not-descr {
+    width: 460px;
+    margin-top: 40px;
+    font-family: var(--arial-font);
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--color-white);
+}
+
+.not-btn {
+    margin-top: 44px;
+    width: 207px;
+}
