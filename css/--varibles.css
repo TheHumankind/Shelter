@@ -1,0 +1,10 @@
+:root {
+    --color-primary: #F1CDB3;
+    --color-dark: #292929;
+    --color-gray-dark: #545454;
+    --color-white: #FFFFFF;
+    --semi-gray: #F6F6F6;
+    --card-gray: #FAFAFA;
+    --georgia-font: Georgia, 'Times New Roman', Times, serif;
+    --arial-font: Arial, Helvetica, sans-serif;
+}

@@ -1,13 +1,4 @@
-:root {
-    --color-primary: #F1CDB3;
-    --color-dark: #292929;
-    --color-gray-dark: #545454;
-    --color-white: #FFFFFF;
-    --semi-gray: #F6F6F6;
-    --card-gray: #FAFAFA;
-    --georgia-font: Georgia, 'Times New Roman', Times, serif;
-    --arial-font: Arial, Helvetica, sans-serif;
-}
+@import url('./--varibles.css');
 
 .button {
     display: flex;
@@ -34,6 +25,8 @@ ul, ol {
 
 a {
     display: block;
+    text-decoration: none;
+    color: var(--color-white);
 }
 
 img {
@@ -100,6 +93,10 @@ nav {
     font-family: var(--arial-font);
     font-size: 15px;
     color: var(--color-white);
+}
+
+.nav li {
+    cursor: pointer;
 }
 
 .active {
